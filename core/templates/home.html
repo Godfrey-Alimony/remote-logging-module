@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <div class="table-responsive text-nowrap">
+      <h2>Network Summary</h2>
+      <table class="table align-middle">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Device IP</th>
+          <th scope="col">Location</th>
+          <th scope="col">Status</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="table-info">
+          <th scope="row">1.</th>
+          <td>1232.3432432.212</td>
+          <td>COCIS</td>
+          <td>Stable</td>
+          <td>
+              <span class="badge bg-primary">Pending</span>
+              <a class="btn btn-warning float-right" href="/logs/">Proceed to LOGS</a>
+        </td>
+        </tr>
+        <tr>
+          <th scope="row">2.</th>
+          <td>192.345.456.66</td>
+          <td>CONAS</td>
+          <td>UNREACHABLE</td>
+          <td>
+              <span class="badge bg-primary">Pending</span>
+              <a class="btn btn-warning float-right" href="/logs/">Proceed to LOGS</a>
+        </td>
+        </tr>
+      
+      </tbody>
+</table>
+
+
+
+
+
+    </div>
+  </main>
+
+{% endblock content %}
